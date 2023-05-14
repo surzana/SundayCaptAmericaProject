@@ -13,6 +13,7 @@ public class EbayHomepageActions {
 		PageFactory.initElements(SetupDrivers.driver, EbayHomepageLocatorsObj);
 		}
 	
+	
 	public void searchShoes(){
 		EbayHomepageLocatorsObj.txtbxSearch.sendKeys("Shoes");
 		EbayHomepageLocatorsObj.btnSearch.click();
