@@ -18,4 +18,9 @@ public class EbayHomepageActions {
 		EbayHomepageLocatorsObj.txtbxSearch.sendKeys("Shoes");
 		EbayHomepageLocatorsObj.btnSearch.click();
 	}
+	
+	public void searchItems(String items){
+		EbayHomepageLocatorsObj.txtbxSearch.sendKeys(items);
+		EbayHomepageLocatorsObj.btnSearch.click();
+	}
 }

@@ -16,11 +16,13 @@ public class EbaySearchResultSteps {
 	
 	@When("^Filter by \"([^\"]*)\"$")
 	public void filter_by(String brand) throws Throwable {
-	    
+		EbaySearchResultActionsObj.filterBrand(brand);
+		Thread.sleep(2000);
 	}
 	
 	@Then("^Item list should have products of \"([^\"]*)\"$")
 	public void item_list_should_have_products_of(String brand) throws Throwable {
-	    
+		EbaySearchResultActionsObj.verifyBrandItems(brand);
+		Thread.sleep(2000);
 	}
 }
