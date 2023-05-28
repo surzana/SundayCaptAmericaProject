@@ -41,14 +41,19 @@ public class EbaySearchResultActions {
 	
 	public void verifyBrandItems(String brand){
 		if(brand.equals("Adidas")){
-		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShirts.isDisplayed());
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtShirts.isDisplayed());
 		} else if (brand.equals("Nike")){
-		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed());
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed());
 		} else if (brand.equals("Unbranded")){
-		Assert.assertTrue(EbaySearchResultLocatorsObj.txtPants.isDisplayed());
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtPants.isDisplayed());
 		} else {
 			System.out.println("Brand not found");
 		}
 	}
 	
+	public void selectBigTallTee() throws Exception{
+		Thread.sleep(3000);
+		EbaySearchResultLocatorsObj.linkShirtItems.click();
+		Thread.sleep(3000);
+	}
 }

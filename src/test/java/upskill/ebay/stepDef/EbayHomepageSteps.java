@@ -24,4 +24,9 @@ public class EbayHomepageSteps {
 		EbayHomepageActionsObj.searchItems(items);
 		Thread.sleep(2000);
 	}
+	
+	@Given("^Search for Big Tall Cotton Tee$")
+	public void search_for_Big_Tall_Cotton_Tee() throws Throwable {
+		EbayHomepageActionsObj.searchItems("Big & Tall Cotton Tee");
+	}
 }
