@@ -8,5 +8,4 @@ public class ShettyHomepageLocators {
 	//Home button
 	@FindBy(xpath="//*[contains(text(),'Home')]")
 	public WebElement btnHome;
-
 }
