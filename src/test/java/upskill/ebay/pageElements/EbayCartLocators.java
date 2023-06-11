@@ -14,7 +14,7 @@ public class EbayCartLocators {
 	public WebElement ddMenSize;
 	
 	//Shirt shade
-	@FindBy(xpath="//select[@aria-label='Please select a Shade -MakeTestFail']")
+	@FindBy(xpath="//select[@aria-label='Please select a Shade']")
 	public WebElement ddShade;
 	
 	//Shirt Quantity
