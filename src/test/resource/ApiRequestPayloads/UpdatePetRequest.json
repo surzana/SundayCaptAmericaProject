@@ -1,0 +1,18 @@
+{
+  "id": 11,
+  "category": {
+    "id": 33,
+    "name": "string"
+  },
+  "name": "Monday",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
